@@ -1,8 +1,8 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-diabetes_model = pickle.load(open("ml/trained_model.sav", 'rb'))
-heart_model = pickle.load(open("ml/heart.sav", 'rb'))
+diabetes_model = pickle.load(open("trained_model.sav", 'rb'))
+heart_model = pickle.load(open("heart.sav", 'rb'))
 
 
 # st.title('multiple  prediction using ml')
