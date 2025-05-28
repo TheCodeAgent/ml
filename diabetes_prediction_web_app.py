@@ -3,8 +3,8 @@ import pickle
 import streamlit as st 
 
 # Load the saved model
-loaded_model = pickle.load(open("ml/trained_model.sav", 'rb'))
-scaler_model = pickle.load(open("ml/scaler.sav", 'rb'))
+loaded_model = pickle.load(open("trained_model.sav", 'rb'))
+scaler_model = pickle.load(open("scaler.sav", 'rb'))
 # Prediction function
 def diabetes(input_data):
     input_data = np.asarray(input_data).reshape(1, -1)
